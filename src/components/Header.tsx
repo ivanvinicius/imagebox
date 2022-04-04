@@ -1,9 +1,9 @@
-import { Box, Flex, Button, useDisclosure, Image } from '@chakra-ui/react';
+import { Box, Flex, Button, useDisclosure, Image } from '@chakra-ui/react'
 
-import { ModalAddImage } from './Modal/AddImage';
+import { ModalAddImage } from './Modal/AddImage'
 
 export function Header(): JSX.Element {
-  const { onOpen, isOpen, onClose } = useDisclosure();
+  const { onOpen, isOpen, onClose } = useDisclosure()
 
   return (
     <>
@@ -23,5 +23,5 @@ export function Header(): JSX.Element {
 
       <ModalAddImage isOpen={isOpen} onClose={onClose} />
     </>
-  );
+  )
 }

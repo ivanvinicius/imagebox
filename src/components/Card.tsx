@@ -4,24 +4,24 @@ import {
   Text,
   Image,
   Skeleton,
-  SkeletonText,
-} from '@chakra-ui/react';
-import { useState } from 'react';
+  SkeletonText
+} from '@chakra-ui/react'
+import { useState } from 'react'
 
 interface Card {
-  title: string;
-  description: string;
-  url: string;
-  ts: number;
+  title: string
+  description: string
+  url: string
+  ts: number
 }
 
 interface CardProps {
-  data: Card;
-  viewImage: (url: string) => void;
+  data: Card
+  viewImage: (url: string) => void
 }
 
 export function Card({ data, viewImage }: CardProps): JSX.Element {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   return (
     <Box key={data.ts} borderRadius="md" bgColor="pGray.800">
@@ -55,5 +55,5 @@ export function Card({ data, viewImage }: CardProps): JSX.Element {
         )}
       </Box>
     </Box>
-  );
+  )
 }

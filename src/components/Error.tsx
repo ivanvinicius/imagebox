@@ -1,4 +1,4 @@
-import { Button, Heading, Flex } from '@chakra-ui/react';
+import { Button, Heading, Flex } from '@chakra-ui/react'
 
 export function Error(): JSX.Element {
   return (
@@ -13,5 +13,5 @@ export function Error(): JSX.Element {
         Clique aqui para tentar novamente
       </Button>
     </Flex>
-  );
+  )
 }
